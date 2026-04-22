@@ -1,0 +1,35 @@
+# Terraform state and secrets
+*.tfstate
+*.tfstate.backup
+*.tfvars
+.terraform/
+.terraform.lock.hcl
+errored.tfstate
+
+# Environment files with secrets
+.env
+*.env
+
+# AWS credentials
+.aws/
+credentials
+
+# Kubernetes sensitive configs
+kubeconfig
+*.kubeconfig
+
+# Docker
+.dockerignore
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+
+# Node
+node_modules/
+build/
