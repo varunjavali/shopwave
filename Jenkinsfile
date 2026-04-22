@@ -119,7 +119,6 @@ pipeline {
                             sh "kubectl apply -f ./${svc}/deployment.yaml -n ${NAMESPACE}"
                         }
 
-                        // Inject MongoDB URI
                         withCredentials([string(credentialsId: 'mongo-uri', variable: 'MONGO_URI')]) {
                             def services2 = ['auth', 'product', 'order', 'payment', 'notification']
                             for (svc in services2) {
