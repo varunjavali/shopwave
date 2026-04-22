@@ -109,7 +109,7 @@ pipeline {
                                 --kubeconfig ${KUBECONFIG}
                         """
 
-                        sh "kubectl apply -f ./k8s/configmap.yaml -n ${NAMESPACE}"
+                        sh "kubectl apply -f ./k8s/api-gateway-configmap.yaml -n ${NAMESPACE}"
                         sh "kubectl apply -f ./frontend/k8s/frontend-deployment.yaml -n ${NAMESPACE}"
                         sh "kubectl apply -f ./frontend/k8s/frontend-service.yaml -n ${NAMESPACE}"
                         sh "kubectl apply -f ./frontend/k8s/k8s/ingress.yaml -n ${NAMESPACE}"
