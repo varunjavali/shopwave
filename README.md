@@ -530,7 +530,7 @@ ShopWave demonstrates a modern cloud-native e-commerce platform built using indu
 
 ## Jenkins Credentials Setup
 
-![Jenkins Credentials](screenshots/Screenshot%20(261)(1).png)
+![Jenkins Credentials](screenshots/Screenshot%20(265).png)
 
 ---
 
